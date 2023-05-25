@@ -1,18 +1,19 @@
 import { StyleSheet } from 'react-native';
+import { colorStyles } from '../../utils/colors/colorStyles';
 
-export const StartStyles = StyleSheet.create({
+export const startStyles = StyleSheet.create({
     welcome: {
-        width: "80%",
-        color: '#000',
-        fontSize: 20,
-        textAlign: 'center',
+        width: "90%",
+        color: colorStyles.black.color,
+        fontSize: 25,
+        textAlign: 'center'
     },
     buttonView: {
         marginTop: 30,
-        width: '50%',
+        width: '50%'
     },
     button: {
-        backgroundColor: '#fb164d',
+        backgroundColor: colorStyles.primaryColor.color,
         paddingVertical: 10,
         height: 50,
         borderRadius: 13,
@@ -21,6 +22,6 @@ export const StartStyles = StyleSheet.create({
     },
     textButton: {
         fontSize: 20,
-        color: '#000'
+        color: colorStyles.black.color
     }
 })
