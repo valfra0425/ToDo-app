@@ -9,7 +9,7 @@ export default function Login({navigation}: LoginProps ): JSX.Element{
         <KeyboardAvoidingView style={mainStyles.container}>
             <StatusBar barStyle="default"/>
             <Logo></Logo>
-            <Text style={loginStyles.text}>Login</Text>
+            <Text style={mainStyles.text}>Login</Text>
             <View style={loginStyles.formView}>
                 <View style={loginStyles.inputView}>
                     <Text style={loginStyles.label}>Email</Text>
@@ -20,6 +20,9 @@ export default function Login({navigation}: LoginProps ): JSX.Element{
                     <TextInput style={loginStyles.input} secureTextEntry={true}/>
                 </View>
             </View>
+            <TouchableOpacity onPress={() => navigation.navigate("Forgot")}>
+                <Text style={loginStyles.smallText}>Esqueci a Senha</Text>
+            </TouchableOpacity>
             <View style={loginStyles.buttonView}>
                 <TouchableOpacity style={loginStyles.button}>
                     <Text style={loginStyles.textButton}>Login</Text>
@@ -29,6 +32,5 @@ export default function Login({navigation}: LoginProps ): JSX.Element{
                 <Text style={loginStyles.smallText}>Ir para o cadastro</Text>
             </TouchableOpacity>
         </KeyboardAvoidingView>
-
     );
 }

@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Start from '../screens/start/start';
 import Login from '../screens/login/login';
 import SignUp from '../screens/signup/signUp';
+import ForgotPassword from '../screens/forgotPassword/forgotPassword';
 import { StackList } from '../utils/Types/navigationTypes';
 
 const Stack = createStackNavigator<StackList>();
@@ -14,6 +15,7 @@ export default function Navigation(): JSX.Element {
                 <Stack.Screen name="Start" component={Start} options={{ headerShown: false }}></Stack.Screen>
                 <Stack.Screen name="Login" component={Login} options={{ headerShown: false }}></Stack.Screen>
                 <Stack.Screen name="SignUp" component={SignUp} options={{ headerShown: false }}></Stack.Screen>
+                <Stack.Screen name="Forgot" component={ForgotPassword} options={{ headerShown: false }}></Stack.Screen>
             </Stack.Navigator>
         </NavigationContainer>
     );

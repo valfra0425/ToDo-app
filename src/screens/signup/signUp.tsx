@@ -11,7 +11,7 @@ export default function SignUp({navigation}: SignUpProps ): JSX.Element {
             <ScrollView contentContainerStyle={signUpStyles.scrollViewContent}>
                 <View style={mainStyles.container}>
                     <Logo></Logo>
-                    <Text style={signUpStyles.text}>Cadastro</Text>
+                    <Text style={mainStyles.text}>Cadastro</Text>
                     <View style={signUpStyles.formView}>
                         <View style={signUpStyles.inputView}>
                             <Text style={signUpStyles.label}>Nome</Text>
@@ -31,7 +31,7 @@ export default function SignUp({navigation}: SignUpProps ): JSX.Element {
                         </View>
                     </View>
                     <View style={signUpStyles.buttonView}>
-                        <TouchableOpacity style={signUpStyles.button}>
+                        <TouchableOpacity style={signUpStyles.button} onPress={() => navigation.goBack()}>
                             <Text style={signUpStyles.textButton}>Cadastre-se</Text>
                         </TouchableOpacity>
                     </View>

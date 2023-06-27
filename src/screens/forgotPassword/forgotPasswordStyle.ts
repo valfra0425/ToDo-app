@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { colorStyles } from '../../utils/colors/colorStyles';
 
-export const loginStyles = StyleSheet.create({
+export const forgotStyles = StyleSheet.create({
     formView: {
         width: '80%',
     },
@@ -39,9 +39,5 @@ export const loginStyles = StyleSheet.create({
     textButton: {
         fontSize: 20,
         color: colorStyles.black.color
-    },
-    smallText: {
-        fontSize: 15,
-        textDecorationLine: 'underline'
     }
-})
+});

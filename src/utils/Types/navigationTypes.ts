@@ -5,8 +5,10 @@ export type StackList = {
     Start: undefined,
     Login: undefined,
     SignUp: undefined,
+    Forgot: undefined,
 };
 
 export type StartProps = StackScreenProps<StackList, 'Start'>;
 export type LoginProps = StackScreenProps<StackList, 'Login'>;
 export type SignUpProps = StackScreenProps<StackList, 'SignUp'>;
+export type ForgotProps = StackScreenProps<StackList, 'Forgot'>;

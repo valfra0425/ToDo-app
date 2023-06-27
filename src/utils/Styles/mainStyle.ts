@@ -7,5 +7,10 @@ export const mainStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: colorStyles.white.color,
+    },
+    text: {
+        // esse é o texto default do app
+        color: colorStyles.black.color,
+        fontSize: 30,
     }
 })

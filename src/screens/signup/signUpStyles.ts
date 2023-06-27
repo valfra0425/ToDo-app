@@ -6,10 +6,6 @@ export const signUpStyles = StyleSheet.create({
         flexGrow: 1,
         justifyContent: 'center'
     },
-    text: {
-        color: colorStyles.black.color,
-        fontSize: 30,
-    },
     formView: {
         width: '80%',
     },
